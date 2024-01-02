@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    font-weight: 400;
+}
+
+.form-container{
+    padding: 50px;
+    /*background-color: rgb(183, 248, 248);*/
+}
+
+.inner-container{
+    /*background-color: azure;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.two-in-column, .two-in-row{
+    padding: 10px;
+}
+
+.two-in-row{
+    grid-column: span 2;
+    display: flex;
+}
+
+.two-in-row ul, .two-in-column ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.two-in-column ul li, .two-in-row ul li{
+    padding: 0 5px;
+}
+
+.submit-btn{
+    padding: 30px 10px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide*/
+@media screen and (max-width: 600px) {
+    .form-container{
+        padding: 0;
+    }
+    .inner-container{
+        grid-template-columns: 1fr;
+    }
+    .two-in-column:nth-child(7) {
+        grid-row: 5;
+    }
+    .two-in-row{
+        grid-column: span 1;
+        flex-direction: column;
+    }
+    .two-in-row ul, .two-in-column ul{
+        flex-direction: column;
+    }
+}

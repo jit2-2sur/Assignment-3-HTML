@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT-3-HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#">
+            <div class="inner-container">
+                <!-- first name -->
+                <div class="two-in-column">
+                    <div><label for="fname">First Name:</label></div>
+                    <div><input type="text" id="fname" name="firtname"></div>
+                </div>
+
+                <!-- last name -->
+                <div class="two-in-column">
+                    <div><label for="lname">Last Name:</label></div>
+                    <div><input type="text" id="lname" name="lastname"></div>
+                </div>
+
+                <!-- email -->
+                <div class="two-in-column">
+                    <div><label for="email">Email:</label></div>
+                    <div><input type="email" id="email" name="email"></div>
+                </div>
+
+                <!-- contact number -->
+                <div class="two-in-column">
+                    <div><label for="contact">Contact Number:</label></div>
+                    <div><input type="text" id="contact" name="contact"></div>
+                </div>
+
+                <!-- username -->
+                <div class="two-in-column">
+                    <div><label for="username">Username:</label></div>
+                    <div><input type="text" id="username" name="username"></div>
+                </div>
+
+                <!-- password -->
+                <div class="two-in-column">
+                    <div><label for="passw">Password:</label></div>
+                    <div><input type="password" id="passw" name="password"></div>
+                </div>
+
+                <!-- address -->
+                <div class="two-in-column">
+                    <div><label for="address">Address:</label></div>
+                    <div><textarea id="address" name="address"></textarea></div>
+                </div>
+
+                <!-- gender -->
+                <div class="two-in-column">
+                    <div><label for="gender">Gender:</label></div>
+                    <div>
+                        <ul>
+                            <li>
+                                <input type="radio" id="male" name="gender" value="Male">
+                                <label for="male">Male</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female">Female</label><br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- qualification -->
+                <div class="two-in-column">
+                    <div><label for="qualific">Qualification:</label></div>
+                    <div>
+                        <select id="qualific" name="qualification">
+                            <option disabled selected>--select--</option>
+                            <option value="class 10">class 10</option>
+                            <option value="class 12">class 12</option>
+                            <option value="bachelors">bachelors degree</option>
+                            <option value="masters">masters degree</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- experience -->
+                <div class="two-in-column">
+                    <div><label for="exp">Experience:</label></div>
+                    <div>
+                        <select id="exp" name="experience">
+                            <option disabled selected>--select--</option>
+                            <option value="0-1 years">0-1 years</option>
+                            <option value="2-3 years">2-3 years</option>
+                            <option value="4-5 years">4-5 years</option>
+                            <option value=">5 years">more than 5 years</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <!-- coding lang -->
+                <div class="two-in-row">
+                    <div><label for="code-lang">Coding Language:</label></div>
+                    <div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="lang1" name="lang1" value="C/C++">
+                                <label for="C/C++">C/C++</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lang2" name="lang2" value="java">
+                                <label for="java"> Java</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lang3" name="lang3" value="c#">
+                                <label for="c#"> C#</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lang2" name="lang2" value="php">
+                                <label for="php"> PHP</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="lang3" name="lang3" value="python">
+                                <label for="python"> Python</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- submit btn-->
+            <div class="submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
